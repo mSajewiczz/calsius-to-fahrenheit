@@ -2,9 +2,20 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void TempConverter()
         {
-            Console.WriteLine("Hello, World!");
+           
+            double c = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Write the temperature in celsius degrees: " + c);
+
+            double result = (c * 18) + 32;
+
+            Console.WriteLine("C -> F = " + result); 
+
+        }
+        static void Main()
+        {
+            TempConverter();
         }
     }
 }
